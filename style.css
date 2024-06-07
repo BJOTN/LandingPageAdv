@@ -7,70 +7,80 @@
 
 @font-face {
   font-family: "MioFont";
-  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed.otf") format("opentype");
+  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "MioFont";
-  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Black.otf") format("opentype");
+  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Black.otf")
+    format("opentype");
   font-weight: 900; /* o il peso appropriato */
   font-style: normal;
 }
 
 @font-face {
   font-family: "MioFont";
-  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Bold.otf") format("opentype");
+  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Bold.otf")
+    format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "MioFont";
-  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_ExtraBold.otf") format("opentype");
+  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_ExtraBold.otf")
+    format("opentype");
   font-weight: 800; /* o il peso appropriato */
   font-style: normal;
 }
 
 @font-face {
   font-family: "MioFont";
-  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_ExtraLight.otf") format("opentype");
+  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_ExtraLight.otf")
+    format("opentype");
   font-weight: 200; /* o il peso appropriato */
   font-style: normal;
 }
 
 @font-face {
   font-family: "MioFont";
-  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Heavy.otf") format("opentype");
+  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Heavy.otf")
+    format("opentype");
   font-weight: 700; /* o il peso appropriato */
   font-style: normal;
 }
 
 @font-face {
   font-family: "MioFont";
-  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Light.otf") format("opentype");
+  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Light.otf")
+    format("opentype");
   font-weight: 300; /* o il peso appropriato */
   font-style: normal;
 }
 
 @font-face {
   font-family: "MioFont";
-  src: url('./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Medium.otf') format("opentype");
+  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Medium.otf")
+    format("opentype");
   font-weight: 500; /* o il peso appropriato */
   font-style: normal;
 }
 
 @font-face {
   font-family: "MioFont";
-  src: url('./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Thin.otf') format("opentype");
+  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Condensed_Thin.otf")
+    format("opentype");
   font-weight: 100; /* o il peso appropriato */
   font-style: normal;
 }
 
 @font-face {
   font-family: "MioFont";
-  src: url('./files/fonts/fonnts.com-Roc_Grotesk_Regular.otf') format("opentype");
+  src: url("./files/fonts/fonnts.com-Roc_Grotesk_Regular.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -85,11 +95,11 @@
 li {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
-.padding{
+.padding {
   padding: 70px 150px;
 }
 /* 
@@ -103,7 +113,7 @@ firstPage
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  position:relative;
+  position: relative;
 }
 
 .left_side_firstPage {
@@ -175,7 +185,6 @@ firstPage
   height: 100%;
   max-width: 400px;
   max-height: 400px;
-
 }
 
 #right_side_firstPage {
@@ -186,17 +195,16 @@ firstPage
   border: 3px solid black;
   max-width: 100vh;
   margin-top: 40px;
-  z-index: 2; 
-  margin-left:auto;
+  z-index: 2;
+  margin-left: auto;
 }
-
 
 /* 
 
 secondPage
 
 */
-#secondPage{
+#secondPage {
   width: 100%;
   height: 100%;
 }
@@ -209,6 +217,10 @@ secondPage
   align-items: center;
   gap: 10px;
   width: 100%;
+}
+.left_side_text_secondPage {
+  width: 100%;
+  max-width: 950px;
 }
 .left_side_text_secondPage h2 {
   color: #ab7df4;
@@ -242,8 +254,9 @@ secondPage
   font-size: 19.9px;
   font-weight: 800;
 }
-.img_text_secondPage img{
+.img_text_secondPage img {
   width: 100%;
+  max-width: 900px;
 }
 
 /* 
@@ -293,12 +306,12 @@ thirdSection
 FOURTH SECTION
 */
 #fourthPage {
-  background:linear-gradient(-94deg, #EFEFEF 0%,#ab7df4 80%);
+  background: linear-gradient(-94deg, #efefef 0%, #ab7df4 80%);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#fourthPage h2{
+#fourthPage h2 {
   font-size: 56px;
   font-weight: 800;
   color: black;
@@ -310,7 +323,6 @@ FOURTH SECTION
   justify-content: center;
   gap: 60px;
   width: 100%;
-
 }
 .buttons_fourthPage p {
   color: #ab7df4;
@@ -360,7 +372,7 @@ fifhtPage
   font-size: 45px;
   font-weight: 800;
   color: #ab7df4;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 /* 
@@ -402,166 +414,166 @@ sixthPage
   font-size: 28px;
   color: white;
 }
-#line_ai{
+#line_ai {
   text-decoration: line-through;
 }
 
 /* seventhPage */
-#seventhPage{
-  background-color: #EFEFEF;
+#seventhPage {
+  background-color: #efefef;
 }
-#seventhPage h2{
+#seventhPage h2 {
   font-size: 56px;
   font-weight: 800;
 }
-.logo_sponsors{
+.logo_sponsors {
   display: flex;
   align-items: center;
   margin: 10px 0;
   flex-wrap: wrap;
 }
-.logo_sponsors img{
+.logo_sponsors img {
   width: 100%;
   max-width: 150px;
-
 }
-.contacts{
+.contacts {
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 30px;
   flex-wrap: nowrap;
-  background-color:#ab7df4;
+  background-color: #ab7df4;
   width: 100%;
   padding: 30px 150px;
 }
-.info_contacts{
+.info_contacts {
   display: flex;
   align-items: center;
-justify-content: center;
+  justify-content: center;
 }
-.info_contacts img{
+.info_contacts img {
   width: 100%;
   max-width: 70px;
 }
-.info_contacts p{
+.info_contacts p {
   font-size: 20px;
 }
-
 
 /* MOBILE */
 
 @media screen and (max-width: 1190px) {
-  #firstPage{
+  #firstPage {
     height: 100%;
   }
-  .title_firstPage_img{
+  .title_firstPage_img {
     display: none;
   }
-  .title_firstPage_img img{
+  .title_firstPage_img img {
     display: none;
   }
-  .left_side_firstPage{
+  .left_side_firstPage {
     width: 100%;
     max-width: none;
   }
-  #right_side_firstPage{
+  #right_side_firstPage {
     margin-top: none;
     margin-left: none;
     width: 100%;
   }
-  .container_title_form{
+  .container_title_form {
     height: 100%;
   }
-
 }
-@media screen and (max-width: 950px) {
-  .padding{
-    padding: 40px 120px;
+
+@media screen and (max-width: 1025px) {
+  .padding {
+    padding: 40px 80px;
   }
-  #firstPage{
+  #firstPage {
     display: flex;
-    flex-direction: column;
+    gap: 30px;
     width: 100%;
     height: 100%;
-    
   }
-  .title_firstPage_title img{
+  .title_firstPage_title h1 {
+    font-size: 75px;
+    line-height: 70px;
+  }
+  .title_firstPage_title img {
     width: 50%;
   }
-  .left_side_firstPage{
+  .left_side_firstPage {
     gap: 0px;
   }
-  .container_title_form{
+  .container_title_form {
     height: 100%;
   }
-}
-
-@media only screen and (max-width: 470px){
-  .padding{
-    padding: 30px 55px;
-  }
-  /* firstPage */
-  .text_secondPage{
-    flex-direction: column;
-    justify-content: center;
+  .list_vantaggi_firstPage {
+    padding-top: 20px;
   }
 
-  /* secondPage */
-  .left_side_text_secondPage p{
-    font-size: 20px;
+  /*  secondPage*/
+
+  .left_side_text_secondPage p {
+    font-size: 25px;
     line-height: 30px;
   }
-  .left_side_text_secondPage h2{
-    font-size: 38px;
+  .left_side_text_secondPage h2 {
+    font-size: 45px;
     line-height: 50px;
   }
-  .img_text_secondPage{
-    max-width: 600px;
+  .img_text_secondPage {
+    max-width: 900px;
   }
-  .vantaggi_secondPage{
-    grid-template-columns: repeat(2,1fr);
+  .vantaggi_secondPage {
+    grid-template-columns: repeat(4, 1fr);
   }
-  .img_secondPage{
+  .img_secondPage {
     flex-direction: column;
     justify-content: center;
   }
-  .img_secondPage p{
-    font-size: 18px;
+  .img_secondPage p {
+    font-size: 22px;
     font-weight: 500;
   }
 
   /* thirdPage */
-  .title_thirdPage h2{
-    font-size: 50px;
+  .section_thirdPage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
   }
-  .title_thirdPage h3{
+  .title_thirdPage h2 {
+    font-size: 60px;
+  }
+  .title_thirdPage h3 {
     font-size: 30px;
   }
-  .steps_thirdPage{
+  .steps_thirdPage {
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
     padding: 10px;
+    background-color: #d9d9d970;
+    border-radius: 10px;
+    border: black 1.3px solid;
   }
-  .steps_thirdPage img{
+  .steps_thirdPage img {
     width: 100%;
     max-width: 150px;
   }
-  .steps_thirdPage p{
+  .steps_thirdPage p {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
   }
-
-  /* fourthPage */
-  #fourthPage h2{
+  /* fourth */
+  #fourthPage h2 {
     font-size: 50px;
     line-height: 50px;
   }
-  .buttons_fourthPage{
-    flex-direction: column;
+  .buttons_fourthPage {
     gap: 30px;
   }
-  .buttons_fourthPage p{
+  .buttons_fourthPage p {
     font-size: 30px;
     font-weight: 800;
     padding: 3px 30px;
@@ -569,28 +581,264 @@ justify-content: center;
   }
 
   /* fifthPage */
-  #fifthPage h2{
-    font-size: 50px;
+  #fifthPage h2 {
+    font-size: 60px;
     font-weight: 800;
   }
-  .team{
+  .team {
     gap: 40px;
-    padding-top:10px
+    padding-top: 10px;
   }
-  .team p{
+  .team p {
     font-size: 30px;
   }
-  .section_fifthPage{
-    flex-direction: column;
-  }
-  .section_fifthPage img{
+  .section_fifthPage div {
     width: 100%;
-    max-width:900px;
+  }
+  .section_fifthPage {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section_fifthPage img {
+    width: 100%;
+    max-width: 900px;
     padding-top: 20px;
   }
-  .section_fifthPage div p{
+  .section_fifthPage div p {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+  }
+  #sixthPage h2 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+  }
+  .container_cards_sixthPage {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .container_cards_sixthPage img {
+    width: 100%;
+    max-width: 150px;
+  }
+  .card {
+    gap: 20px;
+    flex-direction: row;
+  }
+  .card p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .card h3 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  /* seventhPage */
+  #seventhPage h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .logo_sponsors img {
+    max-width: 150px;
+  }
+
+  /* contact */
+  .contacts {
+    padding: 20px 60px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .info_contacts img {
+    max-width: 50px;
+  }
+  .info_contacts p {
+    font-size: 22px;
+  }
+  .info_contacts {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .padding {
+    padding: 30px 55px;
+  }
+  /* firstPage */
+  #firstPage {
+    flex-direction: column;
+  }
+  .list_vantaggi_firstPage {
+    padding-top: 10px;
+  }
+  .title_firstPage_title h1 {
+    font-size: px;
+    margin: 10px 0;
+  }
+  .title_firstPage p {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .list_vantaggi_firstPage p {
+    font-size: 20px;
+  }
+
+  /* secondPage */
+  .text_secondPage {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left_side_text_secondPage p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .left_side_text_secondPage h2 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .img_text_secondPage {
+    max-width: 600px;
+  }
+  .vantaggi_secondPage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img_secondPage {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .img_secondPage p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  /* thirdPage */
+  .title_thirdPage h2 {
+    font-size: 50px;
+    margin: 5px;
+  }
+  .title_thirdPage h3 {
+    font-size: 25px;
+  }
+  .steps_thirdPage {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #efefef;
+    border: none;
+    border-radius: none;
+  }
+  .steps_thirdPage img {
+    width: 100%;
+    max-width: 150px;
+  }
+  .steps_thirdPage p {
+    text-align: center;
+    font-size: 20px;
+  }
+  .section_thirdPage {
+    display: block;
+    gap: none;
+  }
+  /* fourthPage */
+  #fourthPage h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .buttons_fourthPage {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .buttons_fourthPage p {
+    font-size: 25px;
+    font-weight: 800;
+    padding: 3px 30px;
+    line-height: 35px;
+  }
+
+  /* fifthPage */
+  #fifthPage h2 {
+    font-size: 45px;
+    font-weight: 800;
+  }
+  .team {
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .team p {
+    font-size: 30px;
+  }
+  .section_fifthPage div {
+    width: 100%;
+  }
+  .section_fifthPage {
+    flex-direction: column;
+  }
+  .section_fifthPage img {
+    width: 100%;
+    max-width: 900px;
+    padding-top: 20px;
+  }
+  .section_fifthPage div p {
     font-size: 20px;
     text-align: center;
     width: 100%;
+  }
+
+  /* sixthPage */
+  #sixthPage h2 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+  }
+  .container_cards_sixthPage {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .container_cards_sixthPage {
+    gap: 30px;
+  }
+  .card {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .card p {
+    font-size: 20px;
+  }
+  .card h3 {
+    font-weight: 800;
+  }
+  /* seventhPage */
+  #seventhPage h2 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .logo_sponsors img {
+    max-width: 100px;
+  }
+
+  .logo_sponsors {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* contact */
+  .contacts {
+    padding: 15px 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .info_contacts img {
+    max-width: 40px;
+  }
+  .info_contacts p {
+    font-size: 18px;
+  }
+  .info_contacts {
+    text-align: center;
   }
 }
