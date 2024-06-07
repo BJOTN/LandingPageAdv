@@ -345,6 +345,7 @@ fifhtPage
 }
 #fifthPage h2 {
   font-size: 72px;
+  font-weight: 800;
 }
 .section_fifthPage {
   display: flex;
@@ -374,7 +375,12 @@ fifhtPage
   color: #ab7df4;
   text-decoration: underline;
 }
-
+b{
+  font-weight: 800;
+}
+.textsection_fiftPage p{
+  padding-top: 20px;
+}
 /* 
 sixthPage
 */
@@ -388,14 +394,17 @@ sixthPage
 #sixthPage h2 {
   font-size: 56px;
   color: white;
+  font-weight: 800;
 }
 .black_text {
   color: black;
+ 
 }
 .container_cards_sixthPage {
   display: flex;
   padding-top: 40px;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   width: 100%;
 }
@@ -409,10 +418,17 @@ sixthPage
 .card p {
   text-align: center;
 }
+.card h3{
+  font-weight: 800;
+}
 .card p,
 .card h3 {
   font-size: 28px;
   color: white;
+}
+.card img{
+  width: 100%;
+  max-width: 140px;
 }
 #line_ai {
   text-decoration: line-through;
@@ -629,6 +645,7 @@ sixthPage
   .card p {
     font-size: 25px;
     line-height: 30px;
+    text-align: center;
   }
   .card h3 {
     font-weight: 800;
@@ -813,7 +830,7 @@ sixthPage
   /* seventhPage */
   #seventhPage h2 {
     font-size: 45px;
-    line-height: 60px;
+    line-height: 55px;
   }
   .logo_sponsors img {
     max-width: 100px;
