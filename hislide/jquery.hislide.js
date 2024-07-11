@@ -1,21 +1,24 @@
 (function($) {
-    // 本函数每次调用只负责一个轮播图的功能
-    // 也就是说只会产生一个轮播图，这个函数的作用域只能分配给一个轮播图
-    // 要求在调用本函数的时候务必把当前轮播图的根标签传递过来
-    // 这里的形参 ele 就是某个轮播的根标签
+ // Questa funzione gestisce la funzionalità di un singolo carosello di immagini ogni volta che viene chiamata
+// Vale a dire, creerà solo un carosello di immagini, e l'ambito di questa funzione può essere assegnato solo a un carosello di immagini
+// È obbligatorio passare l'etichetta radice dell'attuale carosello di immagini
+
     var slide = function(ele,options) {
         var $ele = $(ele);
-        // 默认设置选项
+        // Opzioni di impostazione predefinite
+
         var setting = {
-        		// 控制轮播的动画时间
+        		// Controlla il tempo di animazione del carosello
             speed: 1000,
-            // 控制 interval 的时间 (轮播速度)
+            // Controlla il tempo di intervallo (velocità del carosello)
             interval: 2000,
             
         };
-        // 对象合并
+        // Fusione di oggetti
+
         $.extend(true, setting, options);
-        // 规定好每张图片处于的位置和状态
+        // Definire la posizione e lo stato di ciascuna immagine
+
         var states = [
             { $zIndex: 1, width: "12%", height: "150px", top: "80px", left: "25%", $opacity: 0.2 },
             { $zIndex: 2, width: "13%", height: "170px", top: "110px", left: "15%", $opacity: 0.4 },
@@ -33,7 +36,7 @@
         var $lis = $ele.find('li');
         var timer = null;
 
-        // 事件
+        // eventi
         $ele.find('.hi-next').on('click', function() {
             next();
         });
@@ -45,14 +48,14 @@
             clearInterval(timer);
             timer = null;
         }).on('mouseleave', function() {
-            /* autoPlay(); */
+            autoPlay();
         });
 
         move();
-        /* autoPlay(); */
+        autoPlay();
 
-        // 让每个 li 对应上面 states 的每个状态
-        // 让 li 从正中间展开
+        // Associa ogni li a ciascuno stato di states
+// Fai espandere li dal centro
         function move() {
             $lis.each(function(index, element) {
                 var state = states[index];
@@ -60,9 +63,9 @@
             });
         }
 
-        // 切换到下一张
+        // Passa alla prossima immagine
         function next() {
-            // 原理：把数组最后一个元素移到第一个
+            // sposta l'ultimo elemento dell'array al primo.
             states.unshift(states.pop());
             move();
         }
@@ -71,12 +74,12 @@
             timer = setInterval(next, setting.interval);
         }
     }
-    // 找到要轮播的轮播图的根标签，调用 slide()
+    //Trova l'etichetta radice dell'immagine del carosello da ruotare e chiama slide()
     $.fn.hiSlide = function(options) {
         $(this).each(function(index, ele) {
             slide(ele,options);
         });
-        // 返回值，以便支持链式调用
+        // Valore restituito per supportare le chiamate concatenate
         return this;
     }
 })(jQuery);
