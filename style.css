@@ -107,21 +107,22 @@ firstPage
  */
 
 #firstPage {
-  background-color: #efefef;
+  background: linear-gradient(94deg, #efefef 0%, #ab7df456 80%);
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   position: relative;
+  padding: 0 150px;
 }
 
 .left_side_firstPage {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   width: 100%;
-  max-width: 400px;
+  max-width: 50%;
   gap: 40px;
 }
 .title_firstPage {
@@ -134,67 +135,71 @@ firstPage
   color: #ab7df4;
   font-size: 80.5px;
   font-weight: 800;
-  margin: 20px 0;
+  margin: 30px 0;
   line-height: 80px;
 }
 .title_firstPage_title img {
-  width: 80%;
-  height: none;
+  width: 100%;
+  max-width: fit-content;
+
 }
 .title_firstPage p {
   font-size: 30.5px;
   font-weight: 500;
 }
-.title_firstPage_img {
+
+.container_left_side{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 60px;
   width: 100%;
 }
-
-.vantaggi_firstPage {
-  margin-top: 30px;
-}
-.list_vantaggi_firstPage {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  padding-top: 20px;
-}
-
-.list_vantaggi_firstPage p {
-  font-size: 24px;
+.description_firstpage{
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+  padding-right: 30px;
 }
 .container_title_form {
-  position: relative;
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.container_tilte_img{
+  display: flex;
+  width: 100%;
 }
 
 .title_firstPage_img {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  max-width: 400px;
-  max-height: 400px;
   z-index: 1;
+  left: 40%;
+
 }
 
 .title_firstPage_img img {
   width: 100%;
   height: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 500px;
+  max-height: 500px;
 }
-
+.container{
+  width: 100%;
+  max-width: 400px;
+}
 #right_side_firstPage {
   position: relative;
-  width: 60%;
+  width: 100%;
   background-color: white;
   padding: 40px;
   border: 3px solid black;
-  max-width: 100vh;
-  margin-top: 40px;
   z-index: 2;
   margin-left: auto;
 }
@@ -474,10 +479,36 @@ sixthPage
 }
 
 /* MOBILE */
-
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1550px){
+  .title_firstPage_img{
+    left: 35%;
+  }
+}
+@media screen and (max-width: 1381px){
+  .container_left_side{
+    gap: 30px;
+  }
+  .title_firstPage_img img{
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .title_firstPage_img{
+    left: 36%;
+  }
+  .left_side_firstPage{
+    max-width: 55%;
+  }
+  .title_firstPage_title h1{
+    font-size: 65px;
+    line-height: 60px;
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 1287px) {
+  
   #firstPage {
     height: 100%;
+    padding: 60px 150px;
   }
   .title_firstPage_img {
     display: none;
@@ -487,15 +518,12 @@ sixthPage
   }
   .left_side_firstPage {
     width: 100%;
-    max-width: none;
+    max-width: fit-content;
   }
-  #right_side_firstPage {
-    margin-top: none;
-    margin-left: none;
-    width: 100%;
-  }
+
   .container_title_form {
     height: 100%;
+    gap: 20px;
   }
 }
 
@@ -508,23 +536,20 @@ sixthPage
     gap: 30px;
     width: 100%;
     height: 100%;
+    padding: 40px 80px;
   }
   .title_firstPage_title h1 {
-    font-size: 75px;
-    line-height: 70px;
+    font-size: 60px;
+    line-height: 60px;
   }
-  .title_firstPage_title img {
-    width: 50%;
-  }
-  .left_side_firstPage {
-    gap: 0px;
-  }
-  .container_title_form {
-    height: 100%;
-  }
-  .list_vantaggi_firstPage {
-    padding-top: 20px;
-  }
+
+.title_firstPage p{
+font-size: 28px;
+}
+.description_firstpage{
+  font-size: 22px;
+  line-height: 32px;
+}
 
   /*  secondPage*/
 
@@ -681,28 +706,26 @@ sixthPage
   }
 }
 
-@media only screen and (max-width: 470px) {
-  .padding {
+@media screen and (max-width: 470px) {
+  .padding, #firstPage{
     padding: 30px 55px;
   }
   /* firstPage */
-  #firstPage {
-    flex-direction: column;
-  }
-  .list_vantaggi_firstPage {
-    padding-top: 10px;
-  }
-  .title_firstPage_title h1 {
-    font-size: px;
-    margin: 10px 0;
-  }
-  .title_firstPage p {
-    font-size: 30px;
-    line-height: 35px;
-  }
-  .list_vantaggi_firstPage p {
-    font-size: 20px;
-  }
+.container_title_form{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title_firstPage_title img{
+  width: 60%;
+}
+.title_firstPage_title h1{
+  margin: 10px 0;
+}
+.container_left_side{
+  gap: 20px;
+}
+
 
   /* secondPage */
   .text_secondPage {
