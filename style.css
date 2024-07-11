@@ -557,26 +557,81 @@ font-size: 28px;
     font-size: 25px;
     line-height: 30px;
   }
-  .left_side_text_secondPage h2 {
+  #secondPage h2 {
     font-size: 45px;
     line-height: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: #ab7df4;
   }
   .img_text_secondPage {
+    width: 100%;
     max-width: 900px;
   }
-  .vantaggi_secondPage {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .img_secondPage {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .img_secondPage p {
-    font-size: 22px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 20px;
-  }
+  /* slider */
+.hi-slide{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hi-slide .hi-next,
+.hi-slide .hi-prev{
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: all 0.7;
+  font-size: 20px;
+  font-weight: bold;
+}
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover{
+  opacity: 1;
+  background-color: white;
+}
+.hi-slide .hi-prev{
+ left: 59px;
+}
+.hi-slide .hi-prev::before{
+  content: '<';
+}
+.hi-slide .hi-next{
+  right: -59px;
+ }
+.hi-slide .hi-next::before{
+  content: '>';
+}
+.hi-slide > ul{
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hi-slide > ul > li{
+  overflow: hidden;
+  position: absolute;
+  left: 377px;
+  top: 124px;
+  z-index: 0;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  background-color: #333;
+}
+.hi-slide > ul > li > img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+
 
   /* thirdPage */
   .section_thirdPage {
