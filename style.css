@@ -484,7 +484,7 @@ sixthPage
     left: 35%;
   }
 }
-@media screen and (max-width: 1381px){
+@media screen and (max-width: 1395px){
   .container_left_side{
     gap: 30px;
   }
