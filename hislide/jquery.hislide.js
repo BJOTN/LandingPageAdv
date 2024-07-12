@@ -11,7 +11,7 @@
         		// Controlla il tempo di animazione del carosello
             speed: 1000,
             // Controlla il tempo di intervallo (velocità del carosello)
-            interval: 2000,
+            interval: 4000,
             
         };
         // Fusione di oggetti
@@ -19,7 +19,7 @@
         $.extend(true, setting, options);
         // Definire la posizione e lo stato di ciascuna immagine
 
-        var states = [
+        var desktopStates = [
             { $zIndex: 1, width: "12%", height: "150px", top: "80px", left: "25%", $opacity: 0.2 },
             { $zIndex: 2, width: "13%", height: "170px", top: "110px", left: "15%", $opacity: 0.4 },
             { $zIndex: 3, width: "17%", height: "218px", top: "140px", left: "25%", $opacity: 0.7 },
@@ -30,20 +30,58 @@
         ];
         
         
-        
+        var mobileStates = [
+            { $zIndex: 1, width: "20%", height: "200px", top: "50px", left: "15%", $opacity: 0.2 },
+            { $zIndex: 2, width: "25%", height: "220px", top: "70px", left: "10%", $opacity: 0.4 },
+            { $zIndex: 3, width: "30%", height: "250px", top: "80px", left: "1%", $opacity: 0.7 },
+            { $zIndex: 4, width: "90%", height: "300px", top: "50px", left: "6%", $opacity: 1 },
+            { $zIndex: 3, width: "30%", height: "250px", top: "80px", left: "70%", $opacity: 0.7 },
+            { $zIndex: 2, width: "25%", height: "220px", top: "70px", left: "60%", $opacity: 0.4 },
+            { $zIndex: 1, width: "20%", height: "200px", top: "50px", left: "50%", $opacity: 0.2 }
+        ];
         
 
         var $lis = $ele.find('li');
         var timer = null;
 
-        // eventi
+        function updateStates() {
+            return window.innerWidth <= 490 ? mobileStates : desktopStates;
+        }
+
+        function move() {
+            var currentState = updateStates();
+            $lis.each(function(index, element) {
+                var state = currentState[index];
+                $(element).css('zIndex', state.$zIndex).finish().animate({
+                    width: state.width,
+                    height: state.height,
+                    top: state.top,
+                    left: state.left,
+                    
+                }, setting.speed).find('img').css('opacity', state.$opacity);
+            });
+        }
+
+        function next() {
+            var currentState = updateStates();
+            currentState.unshift(currentState.pop());
+            move();
+        }
+
+        function autoPlay() {
+            timer = setInterval(next, setting.interval);
+        }
+
         $ele.find('.hi-next').on('click', function() {
             next();
         });
+
         $ele.find('.hi-prev').on('click', function() {
-            states.push(states.shift());
+            var currentState = updateStates();
+            currentState.push(currentState.shift());
             move();
         });
+
         $ele.on('mouseenter', function() {
             clearInterval(timer);
             timer = null;
@@ -51,35 +89,18 @@
             autoPlay();
         });
 
-        move();
-        autoPlay();
-
-        // Associa ogni li a ciascuno stato di states
-// Fai espandere li dal centro
-        function move() {
-            $lis.each(function(index, element) {
-                var state = states[index];
-                $(element).css('zIndex', state.$zIndex).finish().animate(state, setting.speed).find('img').css('opacity', state.$opacity);
-            });
-        }
-
-        // Passa alla prossima immagine
-        function next() {
-            // sposta l'ultimo elemento dell'array al primo.
-            states.unshift(states.pop());
+        $(window).on('resize', function() {
             move();
-        }
+        });
 
-        function autoPlay() {
-            timer = setInterval(next, setting.interval);
-        }
-    }
-    //Trova l'etichetta radice dell'immagine del carosello da ruotare e chiama slide()
+        move();
+        /* autoPlay(); */
+    };
+
     $.fn.hiSlide = function(options) {
         $(this).each(function(index, ele) {
-            slide(ele,options);
+            slide(ele, options);
         });
-        // Valore restituito per supportare le chiamate concatenate
         return this;
-    }
+    };
 })(jQuery);
