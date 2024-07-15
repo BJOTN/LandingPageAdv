@@ -114,7 +114,6 @@ firstPage
   width: 100%;
   height: 100%;
   position: relative;
-  padding: 0 150px;
 }
 
 .left_side_firstPage {
@@ -163,7 +162,7 @@ firstPage
 }
 .container_title_form {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -381,7 +380,6 @@ thirdSection
   width: 100%;
   height: 100%;
   background: linear-gradient(94deg, #efefef 0%, #ab7df456 80%);
-  padding-top: 100px;
 }
 .title_thirdPage h2 {
   color: #ab7df4;
@@ -422,7 +420,6 @@ thirdSection
 .graph {
   width: 100%;
   position: relative;
-/*   max-width: 80vw; */
 }
 .graph img {
   width: 100%;
@@ -443,7 +440,7 @@ thirdSection
 }
 .fade-in{
   opacity: 0;
-  transform: translateY(20vh);
+  transform: translateY(10vh);
   transition: all 1.5s ease-in-out;
 }
 .fade-in.in-page{

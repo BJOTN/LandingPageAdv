@@ -85,9 +85,9 @@
         $ele.on('mouseenter', function() {
             clearInterval(timer);
             timer = null;
-        }).on('mouseleave', function() {
+        })/* .on('mouseleave', function() {
             autoPlay();
-        });
+        }); */
 
         $(window).on('resize', function() {
             move();
