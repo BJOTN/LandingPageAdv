@@ -222,7 +222,7 @@ secondPage
   line-height: 30px;
 }
 #secondPage h2 {
-  font-size: 45px;
+  font-size: 55px;
   line-height: 50px;
   font-weight: 800;
   text-align: center;
@@ -657,6 +657,7 @@ sixthPage
 }
 
 @media screen and (max-width: 1025px) {
+
   .padding {
     padding: 40px 80px;
   }
@@ -681,6 +682,9 @@ font-size: 28px;
 }
 
   /*  secondPage*/
+  #secondPage h2 {
+    font-size: 45px;
+  }
 .first_part_content h3{
 font-size: 1.3rem;
 }
