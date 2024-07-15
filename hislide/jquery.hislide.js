@@ -94,7 +94,7 @@
         });
 
         move();
-        autoPlay();
+        /* autoPlay(); */
     };
 
     $.fn.hiSlide = function(options) {
