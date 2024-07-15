@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var points = document.querySelectorAll('.point');
 
     // Intersection Observer for fade-in effect
     let observer = new IntersectionObserver((entries) => {
