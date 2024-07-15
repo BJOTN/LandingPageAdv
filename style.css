@@ -381,6 +381,7 @@ thirdSection
   width: 100%;
   height: 100%;
   background: linear-gradient(94deg, #efefef 0%, #ab7df456 80%);
+  padding-top: 100px;
 }
 .title_thirdPage h2 {
   color: #ab7df4;
@@ -452,7 +453,7 @@ thirdSection
 /* 
 FOURTH SECTION
 */
-#fourthPage {
+/* #fourthPage {
   background: linear-gradient(-94deg, #efefef 0%, #ab7df4 80%);
   display: flex;
   flex-direction: column;
@@ -481,52 +482,37 @@ FOURTH SECTION
   font-weight: 800;
   text-align: center;
   border: 1px solid black;
-}
+} */
+/*___________________________________________________________ */
 
-/* 
-fifhtPage
- */
-
-#fifthPage {
+#fourthPage {
   height: 100%;
 }
-#fifthPage h2 {
+#fourthPage h2 {
   font-size: 72px;
   font-weight: 800;
 }
-.section_fifthPage {
+.section_fourthPage {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
-.section_fifthPage img {
-  width: 50%;
-  padding-top: 70px;
+.section_fourthPage img {
+  width: 100%;
 }
-.section_fifthPage div {
-  width: 50%;
+.section_fourthPage div {
+  width: 100%;
 }
-.section_fifthPage div p {
+.section_fourthPage div p {
   font-size: 35.2px;
 }
-.team {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 20px;
+.textsection_fourthPage{
+  display: none;
 }
-.team p {
-  font-size: 45px;
-  font-weight: 800;
-  color: #ab7df4;
-  text-decoration: underline;
-}
-b {
-  font-weight: 800;
-}
-.textsection_fiftPage p {
-  padding-top: 20px;
+.content_fourthPage{
+  font-weight: 500;
 }
 /* 
 sixthPage
