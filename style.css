@@ -468,40 +468,10 @@ thirdSection
   opacity: 1;
   transform: translateY(0vh);
 }
+
 /* 
 FOURTH SECTION
 */
-/* #fourthPage {
-  background: linear-gradient(-94deg, #efefef 0%, #ab7df4 80%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#fourthPage h2 {
-  font-size: 56px;
-  font-weight: 800;
-  color: black;
-  margin-bottom: 40px;
-}
-.buttons_fourthPage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  width: 100%;
-}
-.buttons_fourthPage p {
-  color: #ab7df4;
-  background-color: white;
-  padding: 10px 50px;
-  border-radius: 10px;
-  line-height: 50px;
-  font-size: 49px;
-  font-weight: 800;
-  text-align: center;
-  border: 1px solid black;
-} */
-/*___________________________________________________________ */
 
 #fourthPage {
   height: 100%;
@@ -612,27 +582,27 @@ FOURTH SECTION
 }
 
 /* 
-sixthPage
+fifthPage
 */
-#sixthPage {
-  background-color: #ab7df4;
+#fifthPage {
+  background: linear-gradient(94deg, #efefef 0%, #ab7df456 80%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#sixthPage h2 {
+#fifthPage h2 {
   font-size: 56px;
-  color: white;
+  color: black;
   font-weight: 800;
 }
 .black_text {
   color: black;
 }
-.container_cards_sixthPage {
+.container_cards_fifthPage {
   display: flex;
   padding-top: 40px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 10px;
   width: 100%;
@@ -641,24 +611,70 @@ sixthPage
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px;
+  width: 100%;
 }
-.card p {
-  text-align: center;
-}
+
 .card h3 {
   font-weight: 800;
+  font-size: 30px;
+
 }
 .card p,
 .card h3 {
-  font-size: 28px;
-  color: white;
+  color: black;
+  text-align: center;
 }
-.card img {
+.card p {
+font-size: 20px;}
+.card_img{
+ height: 120px;
+ width: 100%;
+ max-width: 130px;
+}
+.card_img img {
   width: 100%;
-  max-width: 140px;
+  max-width: 200px;
+  height: 100%;
+  max-height: 150px;
 }
+
+/* sixthPage */
+#sixthPage {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttons_sixthPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+}
+.button_content_sixtPage{
+  background-color:#ab7df4;
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.button_content_sixtPage p {
+  color: black;
+  line-height: 45px;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  white-space: nowrap;
+
+} */
+/*___________________________________________________________
 
 /* seventhPage */
 #seventhPage {
@@ -677,14 +693,15 @@ sixthPage
 .logo_sponsors img {
   width: 100%;
   max-width: 150px;
+  color: white;
 }
 .contacts {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 30px;
+  justify-content: center;
+  gap: 80px;
   flex-wrap: nowrap;
-  background-color: #ab7df4;
+  background-color: black;
   width: 100%;
   padding: 30px 150px;
 }
@@ -692,13 +709,24 @@ sixthPage
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
-.info_contacts img {
+.info_contacts img{
   width: 100%;
-  max-width: 70px;
+  max-width: 30px;
 }
-.info_contacts p {
+.info_contacts a{
   font-size: 20px;
+  color: white;
+}
+.footer{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.footer p,.footer p a{
+  font-size: 15px;
 }
 
 /* MOBILE */
@@ -776,6 +804,14 @@ sixthPage
   /* fourthPage */
 .container_hover_content{
   max-height: 374px;
+}
+/* sixthPage */
+.button_content_sixtPage{
+  padding: 10px 40px;
+
+}
+.buttons_sixthPage{
+ gap: 1.8rem;
 }
 }
 
@@ -917,16 +953,16 @@ sixthPage
     text-align: center;
     width: 100%;
   }
-  #sixthPage h2 {
+  #fifthPage h2 {
     font-size: 50px;
     font-weight: 800;
     line-height: 60px;
   }
-  .container_cards_sixthPage {
+  .container_cards_fifthPage {
     flex-direction: column;
     gap: 30px;
   }
-  .container_cards_sixthPage img {
+  .container_cards_fifthPage img {
     width: 100%;
     max-width: 150px;
   }
@@ -944,6 +980,15 @@ sixthPage
     font-size: 30px;
     line-height: 30px;
   }
+
+  /* sixthPage */
+  .button_content_sixtPage p {
+    font-size: 2.2rem;
+  }
+  .button_content_sixtPage {
+    padding: 10px 20px;
+  }
+
   /* seventhPage */
   #seventhPage h2 {
     font-size: 50px;
@@ -962,7 +1007,7 @@ sixthPage
     gap: 20px;
   }
   .info_contacts img {
-    max-width: 50px;
+    max-width: 30px;
   }
   .info_contacts p {
     font-size: 22px;
@@ -1044,46 +1089,23 @@ sixthPage
     line-height: 35px;
   }
 
+
   /* fifthPage */
-  #fifthPage h2 {
-    font-size: 45px;
-    font-weight: 800;
-  }
-  .team {
-    gap: 20px;
-    padding-top: 10px;
-  }
-  .team p {
-    font-size: 30px;
-  }
-  .section_fifthPage div {
-    width: 100%;
-  }
-  .section_fifthPage {
-    flex-direction: column;
-  }
+  
   .section_fifthPage img {
     width: 100%;
     max-width: 900px;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
-  .section_fifthPage div p {
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-  }
-
-  /* sixthPage */
-  #sixthPage h2 {
+  #fifthPage h2 {
     font-size: 50px;
     font-weight: 800;
     line-height: 60px;
   }
-  .container_cards_sixthPage {
+  .container_cards_fifthPage {
     flex-direction: column;
     padding-top: 30px;
-  }
-  .container_cards_sixthPage {
     gap: 30px;
   }
   .card {
@@ -1096,6 +1118,14 @@ sixthPage
   .card h3 {
     font-weight: 800;
   }
+  /* sixthPage */
+  .buttons_sixthPage{
+    flex-direction: column;
+  }
+  .button_content_sixtPage {
+    width: 100%;
+  }
+
   /* seventhPage */
   #seventhPage h2 {
     font-size: 45px;
@@ -1112,26 +1142,35 @@ sixthPage
 
   /* contact */
   .contacts {
-    padding: 15px 60px;
-    flex-direction: column;
+    padding: 15px 30px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+  .info_contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
   }
   .info_contacts img {
-    max-width: 40px;
+    max-width: 20px;
   }
-  .info_contacts p {
-    font-size: 18px;
+  .info_contacts a {
+    font-size: 15px;
   }
   .info_contacts {
     text-align: center;
   }
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .footer p,.footer p a{
+    font-size: 10px;
+  }
+  
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-}
