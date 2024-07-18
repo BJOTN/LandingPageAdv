@@ -195,7 +195,6 @@ firstPage
   position: relative;
   width: 100%;
   background-color: white;
-  padding: 40px;
   border: 3px solid black;
   z-index: 2;
   margin-left: auto;
@@ -787,13 +786,14 @@ font-size: 20px;}
 
   /* secondPage */
   .first_part_content img {
-    width: 30%;
+    width: 15%;
   }
   .info_content {
     gap: 15px;
   }
   .info_content span {
     padding: 8px 15px;
+    font-size: 15px;
   }
   .prices {
     max-width: 700px;
