@@ -366,23 +366,23 @@ secondPage
   height: 100%;
   max-width: 300px;
 }
-.container_price{
+.container_price {
   margin-bottom: 30px;
 }
-.container_button_scopri{
+.container_button_scopri {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container_button_scopri button{
+.container_button_scopri button {
   padding: 10px 30px;
   background-color: #ab7df4;
   border-radius: 20px;
   border: 1px solid #a670fc;
 }
-.container_button_scopri button a{
+.container_button_scopri button a {
   color: white;
   font-size: 44px;
   font-weight: 800;
@@ -454,8 +454,8 @@ thirdSection
 }
 .point div {
   border-radius: 1000px;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   background-color: black;
 }
 .fade-in {
@@ -548,7 +548,7 @@ FOURTH SECTION
   pointer-events: none; /* Per evitare interazioni quando nascosto */
   transition: opacity 0.5s ease-in-out; /* Transizione dell'opacità */
 }
-.container_hover:not(:hover) .container_hover_content{
+.container_hover:not(:hover) .container_hover_content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -575,7 +575,7 @@ FOURTH SECTION
   font-size: 15px;
   text-align: center;
 }
-.consiglio{
+.consiglio {
   font-size: 12px;
   text-align: end;
 }
@@ -618,7 +618,6 @@ fifthPage
 .card h3 {
   font-weight: 800;
   font-size: 30px;
-
 }
 .card p,
 .card h3 {
@@ -626,17 +625,17 @@ fifthPage
   text-align: center;
 }
 .card p {
-font-size: 20px;}
-.card_img{
- height: 120px;
- width: 100%;
- max-width: 130px;
+  font-size: 20px;
+}
+.card_img {
+  height: 150px;
+  width: 100%;
+  max-width: 180px;
 }
 .card_img img {
   width: 100%;
-  max-width: 200px;
   height: 100%;
-  max-height: 150px;
+  object-fit: contain;
 }
 
 /* sixthPage */
@@ -653,8 +652,8 @@ font-size: 20px;}
   gap: 3rem;
   width: 100%;
 }
-.button_content_sixtPage{
-  background-color:#ab7df4;
+.button_content_sixtPage {
+  background-color: #ab7df4;
   padding: 10px 50px;
   border-radius: 10px;
   border: 1px solid black;
@@ -671,8 +670,8 @@ font-size: 20px;}
   font-weight: 800;
   text-align: center;
   white-space: nowrap;
-
-} */
+}
+*/
 /*___________________________________________________________
 
 /* seventhPage */
@@ -710,21 +709,22 @@ font-size: 20px;}
   justify-content: center;
   gap: 10px;
 }
-.info_contacts img{
+.info_contacts img {
   width: 100%;
   max-width: 30px;
 }
-.info_contacts a{
+.info_contacts a {
   font-size: 20px;
   color: white;
 }
-.footer{
+.footer {
   display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
-.footer p,.footer p a{
+.footer p,
+.footer p a {
   font-size: 15px;
 }
 
@@ -735,7 +735,7 @@ font-size: 20px;}
   }
 
   /* thirdPage */
-  .container_hover_content{
+  .container_hover_content {
     max-height: 500px;
   }
 }
@@ -759,7 +759,7 @@ font-size: 20px;}
     margin: 20px 0;
   }
   /* fourthPage */
-  .container_hover_content{
+  .container_hover_content {
     max-height: 432px;
   }
 }
@@ -802,17 +802,16 @@ font-size: 20px;}
     max-width: 250px;
   }
   /* fourthPage */
-.container_hover_content{
-  max-height: 374px;
-}
-/* sixthPage */
-.button_content_sixtPage{
-  padding: 10px 40px;
-
-}
-.buttons_sixthPage{
- gap: 1.8rem;
-}
+  .container_hover_content {
+    max-height: 374px;
+  }
+  /* sixthPage */
+  .button_content_sixtPage {
+    padding: 10px 40px;
+  }
+  .buttons_sixthPage {
+    gap: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 1025px) {
@@ -862,11 +861,11 @@ font-size: 20px;}
   .mattia {
     max-width: 200px;
   }
-  .container_button_scopri button{
+  .container_button_scopri button {
     padding: 8px 20px;
   }
-  .container_button_scopri button a{
-    font-size:34px ;
+  .container_button_scopri button a {
+    font-size: 34px;
   }
 
   /* thirdPage */
@@ -885,22 +884,22 @@ font-size: 20px;}
   }
 
   /* fourth */
-  .absolute_container_hover{
+  .absolute_container_hover {
     display: none;
   }
-  .consiglio{
+  .consiglio {
     display: none;
   }
-  .textsection_fourthPage{
+  .textsection_fourthPage {
     display: block;
   }
-  .section_fourthPage{
+  .section_fourthPage {
     flex-direction: column;
   }
-  .container_img_team{
+  .container_img_team {
     max-width: fit-content;
   }
-  .textsection_fourthPage{
+  .textsection_fourthPage {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -908,7 +907,7 @@ font-size: 20px;}
     gap: 20px;
     padding-top: 30px;
   }
-  .textsection_fourthPage p{
+  .textsection_fourthPage p {
     font-size: 20px;
     line-height: 30px;
     background-color: #efefefab;
@@ -918,7 +917,7 @@ font-size: 20px;}
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     border: 0.1px solid #efefeff1;
   }
-  .textsection_fourthPage p span{
+  .textsection_fourthPage p span {
     font-size: 35px;
     font-weight: 800;
     letter-spacing: 1px;
@@ -1088,10 +1087,17 @@ font-size: 20px;}
     padding: 3px 30px;
     line-height: 35px;
   }
-
-
+  .point div {
+    width: 15px;
+    height: 15px;
+  }
+/* fourthPage */
+.section_fourthPage .content_fourthPage p{
+  font-size: 25px;
+  line-height: 35px;
+}
   /* fifthPage */
-  
+
   .section_fifthPage img {
     width: 100%;
     max-width: 900px;
@@ -1119,7 +1125,7 @@ font-size: 20px;}
     font-weight: 800;
   }
   /* sixthPage */
-  .buttons_sixthPage{
+  .buttons_sixthPage {
     flex-direction: column;
   }
   .button_content_sixtPage {
@@ -1147,7 +1153,7 @@ font-size: 20px;}
     align-items: center;
     gap: 30px;
   }
-  .info_contacts{
+  .info_contacts {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1162,15 +1168,14 @@ font-size: 20px;}
   .info_contacts {
     text-align: center;
   }
-  .footer{
+  .footer {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
   }
-  .footer p,.footer p a{
+  .footer p,
+  .footer p a {
     font-size: 10px;
   }
-  
 }
-
