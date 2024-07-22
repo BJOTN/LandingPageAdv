@@ -468,9 +468,28 @@ thirdSection
   transform: translateY(0vh);
 }
 /* IL NOSTRO METODO */
-
+.container_content_metodo h2{
+  color: #ab7df4;
+  font-size: 72px;
+  font-weight: 800;
+}
+.content_text h3{
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 48px;
+  padding-bottom: 15px;
+}
+.content_text ul li, .content_text p{
+  line-height: 35px;
+  font-size: 28px;
+}
+.content_text ul li{
+  font-weight: 500;
+  list-style:inside;
+  padding-bottom: 15px;
+}
 .vantaggi_secondPage {
-  border: 1px solid #ab7df4;
+  border: 5px solid #ab7df4;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -910,6 +929,16 @@ fifthPage
   }
 
   /* il nostro metodo */
+  .container_content_metodo h2 {
+    font-size: 55px;
+  }
+  .content_text h3{
+    font-size: 34px;
+  }
+  .content_text ul li, .content_text p{
+    font-size: 22px;
+    line-height: 25px;
+  }
   .vantaggi_secondPage {
      grid-template-columns: repeat(4, 1fr);
    }
@@ -1113,6 +1142,18 @@ fifthPage
     gap: 20px;
   }
   /* il nostro metodo */
+  .container_content_metodo h2{
+    font-size: 40px;
+  }
+  .content_text h3{
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .content_text ul li, .content_text h3{
+    padding-bottom: 10px;
+  }
+  
+
   .vantaggi_secondPage {
     grid-template-columns: repeat(2, 1fr);
   }
