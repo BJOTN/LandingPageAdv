@@ -1104,6 +1104,12 @@ fifthPage
 }
 
 @media screen and (max-width: 470px) {
+  #sixthPage p{
+    font-size: 2rem;
+  }
+  #count1{
+    font-size: 4.5rem;
+  }
   .padding,
   #firstPage {
     padding: 30px 55px;
