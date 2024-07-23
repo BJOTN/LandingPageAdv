@@ -19,7 +19,7 @@
         $.extend(true, setting, options);
         // Definire la posizione e lo stato di ciascuna immagine
 
-        var desktopStates = [
+/*         var desktopStates = [
             { $zIndex: 1, width: "12%", height: "150px", top: "80px", left: "25%", $opacity: 0.2 },
             { $zIndex: 2, width: "13%", height: "170px", top: "110px", left: "15%", $opacity: 0.4 },
             { $zIndex: 3, width: "17%", height: "218px", top: "140px", left: "25%", $opacity: 0.7 },
@@ -27,18 +27,37 @@
             { $zIndex: 3, width: "17%", height: "218px", top: "140px", left: "58%", $opacity: 0.7 },
             { $zIndex: 2, width: "13%", height: "170px", top: "110px", left: "72%", $opacity: 0.4 },
             { $zIndex: 1, width: "12%", height: "150px", top: "80px", left: "65%", $opacity: 0.2 }
+        ]; */
+        var desktopStates = [
+            { $zIndex: 1, width: "10%", height: "130px", top: "150px", left: "30%", $opacity: 0.2 },
+            { $zIndex: 2, width: "12%", height: "150px", top: "140px", left: "30%", $opacity: 0.3 },
+            { $zIndex: 3, width: "13%", height: "170px", top: "130px", left: "30%", $opacity: 0.4 },
+            { $zIndex: 4, width: "17%", height: "218px", top: "120px", left: "23%", $opacity: 0.5 },
+            { $zIndex: 5, width: "20%", height: "250px", top: "110px", left: "25%", $opacity: 0.6 },
+            { $zIndex: 6, width: "30%", height: "320px", top: "90px", left: "27.5%", $opacity: 0.8 },
+            { $zIndex: 7, width: "40%", height: "360px", top: "70px", left: "30%", $opacity: 1 },
+            { $zIndex: 6, width: "30%", height: "320px", top: "90px", left: "43%", $opacity: 0.8 },
+            { $zIndex: 5, width: "20%", height: "250px", top: "110px", left: "55%", $opacity: 0.6 },
+            { $zIndex: 4, width: "17%", height: "218px", top: "120px", left: "60%", $opacity: 0.5 },
+            { $zIndex: 3, width: "13%", height: "170px", top: "130px", left: "66%", $opacity: 0.4 },
+            { $zIndex: 2, width: "12%", height: "150px", top: "140px", left: "66%%", $opacity: 0.3 }
         ];
-        
         
         var mobileStates = [
-            { $zIndex: 1, width: "20%", height: "200px", top: "50px", left: "15%", $opacity: 0.2 },
-            { $zIndex: 2, width: "25%", height: "220px", top: "70px", left: "10%", $opacity: 0.4 },
-            { $zIndex: 3, width: "30%", height: "250px", top: "80px", left: "1%", $opacity: 0.7 },
-            { $zIndex: 4, width: "90%", height: "300px", top: "50px", left: "6%", $opacity: 1 },
-            { $zIndex: 3, width: "30%", height: "250px", top: "80px", left: "70%", $opacity: 0.7 },
-            { $zIndex: 2, width: "25%", height: "220px", top: "70px", left: "60%", $opacity: 0.4 },
-            { $zIndex: 1, width: "20%", height: "200px", top: "50px", left: "50%", $opacity: 0.2 }
+            { $zIndex: 1, width: "20%", height: "130px", top: "150px", left: "1%", $opacity: 0.2 },
+            { $zIndex: 2, width: "25%", height: "150px", top: "130px", left: "1%", $opacity: 0.3 },
+            { $zIndex: 3, width: "30%", height: "170px", top: "110px", left: "1%", $opacity: 0.4 },
+            { $zIndex: 4, width: "35%", height: "218px", top: "90px", left: "1%", $opacity: 0.5 },
+            { $zIndex: 5, width: "40%", height: "250px", top: "70px", left: "1%", $opacity: 0.6 },
+            { $zIndex: 6, width: "45%", height: "320px", top: "50px", left: "5%", $opacity: 0.8 },
+            { $zIndex: 7, width: "80%", height: "360px", top: "30px", left: "10%", $opacity: 1 },
+            { $zIndex: 6, width: "45%", height: "320px", top: "50px", left: "50%", $opacity: 0.8 },
+            { $zIndex: 5, width: "40%", height: "250px", top: "70px", left: "60%", $opacity: 0.6 },
+            { $zIndex: 4, width: "35%", height: "218px", top: "90px", left: "60%", $opacity: 0.5 },
+            { $zIndex: 3, width: "30%", height: "170px", top: "110px", left: "60%", $opacity: 0.4 },
+            { $zIndex: 2, width: "25%", height: "150px", top: "130px", left: "60%", $opacity: 0.3 },
         ];
+        
         
 
         var $lis = $ele.find('li');
