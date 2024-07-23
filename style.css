@@ -107,10 +107,10 @@ firstPage
  */
 
 #firstPage {
-  background-color: #efefef;
+  background: linear-gradient(94deg, #efefef 0%, #ab7df456 80%);
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   position: relative;
@@ -118,10 +118,10 @@ firstPage
 
 .left_side_firstPage {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   width: 100%;
-  max-width: 400px;
+  max-width: 50%;
   gap: 40px;
 }
 .title_firstPage {
@@ -134,67 +134,67 @@ firstPage
   color: #ab7df4;
   font-size: 80.5px;
   font-weight: 800;
-  margin: 20px 0;
+  margin: 30px 0;
   line-height: 80px;
 }
 .title_firstPage_title img {
-  width: 80%;
-  height: none;
+  width: 100%;
+  max-width: fit-content;
 }
 .title_firstPage p {
   font-size: 30.5px;
   font-weight: 500;
 }
-.title_firstPage_img {
+
+.container_left_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 60px;
   width: 100%;
 }
-
-.vantaggi_firstPage {
-  margin-top: 30px;
-}
-.list_vantaggi_firstPage {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  padding-top: 20px;
-}
-
-.list_vantaggi_firstPage p {
-  font-size: 24px;
+.description_firstpage {
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+  padding-right: 30px;
 }
 .container_title_form {
-  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.container_tilte_img {
+  display: flex;
+  width: 100%;
 }
 
 .title_firstPage_img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  max-width: 400px;
-  max-height: 400px;
   z-index: 1;
+  left: 40%;
 }
 
 .title_firstPage_img img {
   width: 100%;
   height: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 500px;
+  max-height: 500px;
 }
-
+.container {
+  width: 100%;
+  max-width: 400px;
+}
 #right_side_firstPage {
   position: relative;
-  width: 60%;
+  width: 100%;
   background-color: white;
-  padding: 40px;
   border: 3px solid black;
-  max-width: 100vh;
-  margin-top: 40px;
   z-index: 2;
   margin-left: auto;
 }
@@ -207,37 +207,290 @@ secondPage
 #secondPage {
   width: 100%;
   height: 100%;
-}
-
-/* text */
-
-.text_secondPage {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
-.left_side_text_secondPage {
-  width: 100%;
-  max-width: 950px;
-}
-.left_side_text_secondPage h2 {
-  color: #ab7df4;
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 60px;
-}
+
 .left_side_text_secondPage p {
-  font-size: 25.6px;
-  padding-top: 15px;
-  line-height: 40px;
+  font-size: 25px;
+  line-height: 30px;
 }
+#secondPage h2 {
+  font-size: 55px;
+  line-height: 50px;
+  font-weight: 800;
+  text-align: center;
+  color: #ab7df4;
+}
+/* slider */
+.container_hi_slider {
+  width: 100%;
+  height: 100vh;
+  max-height: 450px;
+}
+.hi-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+}
+.hi-slide .hi-next,
+.hi-slide .hi-prev {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ab7df4;
+  color: black;
+  transition: all 0.7;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1000;
+}
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover {
+  opacity: 1;
+  background-color: #ab7df477;
+}
+.hi-slide .hi-next:active,
+.hi-slide .hi-prev:active {
+  background-color: #ab7df4;
+}
+.hi-slide .hi-prev {
+  left: 10%;
+  top: 250px;
+}
+.hi-slide .hi-prev::before {
+  content: "<";
+}
+.hi-slide .hi-next {
+  right: 10%;
+  top: 250px;
+}
+.hi-slide .hi-next::before {
+  content: ">";
+}
+.hi-slide > ul {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+}
+.hi-slide > ul > li {
+  overflow: hidden;
+  position: absolute;
+  left: 377px;
+  top: 124px;
+  z-index: 0;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+.hi-slide > ul > li > div {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+.container_card_carrousel {
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  background-color: #ab7df4;
+  border-radius: 20px;
+  padding: 15px 5px;
+  object-fit: contain;
+  overflow: hidden;
+}
+.container_content {
+  background-color: #f9f9f9f0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.first_part_content {
+  width: 100%;
+}
+.first_part_content h3 {
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 2.2rem;
+}
+.first_part_content p {
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+
+.first_part_content img {
+  width: 20%;
+}
+.info_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.137);
+  padding-top: 25px;
+}
+.info_content span {
+  background-color: #ab7df427;
+  padding: 10px 20px;
+  border: 1px solid #ab7df45c;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+.container_price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prices {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+.mattia {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+}
+.container_price {
+  margin-bottom: 30px;
+}
+.container_button_scopri {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_button_scopri button {
+  padding: 10px 30px;
+  background-color: #ab7df4;
+  border-radius: 20px;
+  border: 1px solid #a670fc;
+}
+.container_button_scopri button a {
+  color: white;
+  font-size: 44px;
+  font-weight: 800;
+}
+
+/* 
+
+thirdSection
+
+*/
 .violet_text {
   color: #ab7df4;
 }
+#thirdPage {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(94deg, #efefef 0%, #ab7df456 80%);
+}
+.title_thirdPage h2 {
+  color: #ab7df4;
+  font-size: 74.4px;
+  font-weight: 800;
+  margin: 15px;
+  text-align: center;
+}
+.container_content_price {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 50px;
+  background-color: transparent;
+}
+.container_content_text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 30px;
+}
+.container_content_text p,
+.pricing p {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.pricing h3 {
+  font-size: 96px;
+  font-weight: 500;
+}
+.graph {
+  width: 100%;
+  position: relative;
+}
+.graph img {
+  width: 100%;
+  height: 100%;
+}
+.point {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.point div {
+  border-radius: 1000px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(10vh);
+  transition: all 1.5s ease-in-out;
+}
+.fade-in.in-page {
+  opacity: 1;
+  transform: translateY(0vh);
+}
+/* IL NOSTRO METODO */
+.container_content_metodo h2{
+  color: #ab7df4;
+  font-size: 72px;
+  font-weight: 800;
+}
+.content_text h3{
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 48px;
+  padding-bottom: 15px;
+}
+.content_text ul li, .content_text p{
+  line-height: 35px;
+  font-size: 35px;
+  font-weight: 500;
+}
+.content_text ul li{
+  list-style:inside;
+  padding-bottom: 15px;
+}
 .vantaggi_secondPage {
-  border: 1px solid #ab7df4;
+  border: 5px solid #ab7df4;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -259,151 +512,142 @@ secondPage
   max-width: 900px;
 }
 
-/* 
 
-thirdSection
-
-*/
-#thirdPage {
-  width: 100%;
-  height: 100%;
-  background-color: #efefef;
-}
-.title_thirdPage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.title_thirdPage h2 {
-  color: #ab7df4;
-  font-size: 74.4px;
-  font-weight: 800;
-  margin: 15px;
-}
-.title_thirdPage h3 {
-  color: white;
-  font-size: 42px;
-  font-weight: 800;
-  background-color: #ab7df4;
-  border-radius: 10px;
-  padding: 10px 15px;
-}
-.section_thirdPage {
-  padding: 40px 0;
-}
-.steps_thirdPage {
-  display: flex;
-  align-items: center;
-  padding: 30px 0;
-  gap: 40px;
-}
-.section_thirdPage p {
-  font-size: 29.8px;
-}
 
 /* 
 FOURTH SECTION
 */
+
 #fourthPage {
-  background: linear-gradient(-94deg, #efefef 0%, #ab7df4 80%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#fourthPage h2 {
-  font-size: 56px;
-  font-weight: 800;
-  color: black;
-  margin-bottom: 40px;
-}
-.buttons_fourthPage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  width: 100%;
-}
-.buttons_fourthPage p {
-  color: #ab7df4;
-  background-color: white;
-  padding: 10px 50px;
-  border-radius: 10px;
-  line-height: 50px;
-  font-size: 49px;
-  font-weight: 800;
-  text-align: center;
-  border: 1px solid black;
-}
-
-/* 
-fifhtPage
- */
-
-#fifthPage {
   height: 100%;
 }
-#fifthPage h2 {
+#fourthPage h2 {
   font-size: 72px;
   font-weight: 800;
 }
-.section_fifthPage {
+.section_fourthPage {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
-.section_fifthPage img {
-  width: 50%;
-  padding-top: 70px;
+.section_fourthPage img {
+  width: 100%;
+  z-index: 0;
 }
-.section_fifthPage div {
-  width: 50%;
-}
-.section_fifthPage div p {
+
+.section_fourthPage .content_fourthPage p {
   font-size: 35.2px;
+  line-height: 40px;
 }
-.team {
+.textsection_fourthPage {
+  display: none;
+}
+.content_fourthPage {
+  font-weight: 500;
+  width: 100%;
+}
+.container_img_team {
+  width: 100%;
+  position: relative;
+}
+
+.absolute_container_hover {
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+
+.container_hover {
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 20px;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
 }
-.team p {
-  font-size: 45px;
+.container_hover_content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 645px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.877);
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  box-sizing: border-box;
+  white-space: normal; /* Permette al testo di andare a capo */
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none; /* Per evitare interazioni quando nascosto */
+  transition: opacity 0.5s ease-in-out; /* Transizione dell'opacità */
+}
+.container_hover:not(:hover) .container_hover_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container_hover:hover .container_hover_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;
+  pointer-events: auto; /* Permette le interazioni quando visibile */
+}
+
+.container_hover_content .violet_text {
+  font-size: 2em;
   font-weight: 800;
-  color: #ab7df4;
-  text-decoration: underline;
+  color: black;
+  line-height: 95%;
+  margin-bottom: 20px;
 }
-b{
-  font-weight: 800;
+.container_hover .container_hover_content p {
+  font-size: 15px;
+  text-align: center;
 }
-.textsection_fiftPage p{
-  padding-top: 20px;
+.consiglio {
+  font-size: 12px;
+  text-align: end;
 }
+
 /* 
-sixthPage
+fifthPage
 */
-#sixthPage {
-  background-color: #ab7df4;
+#fifthPage {
+  background: linear-gradient(94deg, #efefef 0%, #ab7df456 80%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#sixthPage h2 {
+#fifthPage h2 {
   font-size: 56px;
-  color: white;
+  color: black;
   font-weight: 800;
 }
 .black_text {
   color: black;
- 
 }
-.container_cards_sixthPage {
+.container_cards_fifthPage {
   display: flex;
   padding-top: 40px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 10px;
   width: 100%;
@@ -412,25 +656,74 @@ sixthPage
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px;
+  width: 100%;
 }
-.card p {
-  text-align: center;
-}
-.card h3{
+
+.card h3 {
   font-weight: 800;
+  font-size: 30px;
 }
 .card p,
 .card h3 {
-  font-size: 28px;
-  color: white;
+  color: black;
+  text-align: center;
 }
-.card img{
+.card p {
+  font-size: 20px;
+}
+.card_img {
+  height: 150px;
   width: 100%;
-  max-width: 140px;
+  max-width: 180px;
+}
+.card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
+/* sixthPage */
+#sixthPage {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons_sixthPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+}
+.button_content_sixtPage {
+  background-color: #ab7df4;
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+#sixthPage p {
+  color: white;
+  line-height: 45px;
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+#count1{
+  font-size: 6.5rem;
+}
+*/
+/*___________________________________________________________
 
 /* seventhPage */
 #seventhPage {
@@ -449,14 +742,15 @@ sixthPage
 .logo_sponsors img {
   width: 100%;
   max-width: 150px;
+  color: white;
 }
 .contacts {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 30px;
+  justify-content: center;
+  gap: 80px;
   flex-wrap: nowrap;
-  background-color: #ab7df4;
+  background-color: black;
   width: 100%;
   padding: 30px 150px;
 }
@@ -464,20 +758,66 @@ sixthPage
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 .info_contacts img {
   width: 100%;
-  max-width: 70px;
+  max-width: 30px;
 }
-.info_contacts p {
+.info_contacts a {
   font-size: 20px;
+  color: white;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.footer p,
+.footer p a {
+  font-size: 15px;
 }
 
 /* MOBILE */
+@media screen and (max-width: 1550px) {
+  .title_firstPage_img {
+    left: 35%;
+  }
 
-@media screen and (max-width: 1190px) {
+  /* thirdPage */
+  .container_hover_content {
+    max-height: 500px;
+  }
+}
+@media screen and (max-width: 1395px) {
+  .container_left_side {
+    gap: 30px;
+  }
+  .title_firstPage_img img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .title_firstPage_img {
+    left: 36%;
+  }
+  .left_side_firstPage {
+    max-width: 55%;
+  }
+  .title_firstPage_title h1 {
+    font-size: 65px;
+    line-height: 60px;
+    margin: 20px 0;
+  }
+  /* fourthPage */
+  .container_hover_content {
+    max-height: 432px;
+  }
+}
+@media screen and (max-width: 1287px) {
   #firstPage {
     height: 100%;
+    padding: 60px 150px;
   }
   .title_firstPage_img {
     display: none;
@@ -487,15 +827,47 @@ sixthPage
   }
   .left_side_firstPage {
     width: 100%;
-    max-width: none;
+    max-width: fit-content;
   }
-  #right_side_firstPage {
-    margin-top: none;
-    margin-left: none;
-    width: 100%;
-  }
+
   .container_title_form {
     height: 100%;
+    gap: 20px;
+  }
+  .first_part_content h3{
+    font-size: 1.9rem;
+  }
+  .first_part_content p{
+    font-size: 1.1rem;
+  }
+
+  /* secondPage */
+  .first_part_content img {
+    width: 15%;
+  }
+  .info_content {
+    gap: 15px;
+  }
+  .info_content span {
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+  .prices {
+    max-width: 700px;
+  }
+  .mattia {
+    max-width: 250px;
+  }
+  /* fourthPage */
+  .container_hover_content {
+    max-height: 374px;
+  }
+  /* sixthPage */
+  .button_content_sixtPage {
+    padding: 10px 40px;
+  }
+  .buttons_sixthPage {
+    gap: 1.8rem;
   }
 }
 
@@ -508,93 +880,134 @@ sixthPage
     gap: 30px;
     width: 100%;
     height: 100%;
+    padding: 40px 80px;
   }
   .title_firstPage_title h1 {
-    font-size: 75px;
-    line-height: 70px;
+    font-size: 60px;
+    line-height: 60px;
   }
-  .title_firstPage_title img {
-    width: 50%;
+
+  .title_firstPage p {
+    font-size: 28px;
   }
-  .left_side_firstPage {
-    gap: 0px;
-  }
-  .container_title_form {
-    height: 100%;
-  }
-  .list_vantaggi_firstPage {
-    padding-top: 20px;
+  .description_firstpage {
+    font-size: 22px;
+    line-height: 32px;
   }
 
   /*  secondPage*/
-
-  .left_side_text_secondPage p {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .left_side_text_secondPage h2 {
+  #secondPage h2 {
     font-size: 45px;
-    line-height: 50px;
   }
-  .img_text_secondPage {
-    max-width: 900px;
+  .text_secondPage{
+    padding-bottom: 30px;
   }
-  .vantaggi_secondPage {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .img_secondPage {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .img_secondPage p {
-    font-size: 22px;
-    font-weight: 500;
-    text-align: center;
+  .first_part_content h3 {
+    font-size: 1.5rem;
     line-height: 20px;
+  }
+  .first_part_content p {
+    font-size: 1rem;
+    line-height: 15px;
+  }
+  .info_content {
+    gap: 10px;
+  }
+  .info_content span {
+    font-size: 0.82rem;
+    padding: 3px 6px;
+  }
+  .prices {
+    max-width: 500px;
+  }
+  .mattia {
+    max-width: 200px;
+  }
+  .container_button_scopri button {
+    padding: 8px 20px;
+  }
+  .container_button_scopri button a {
+    font-size: 34px;
   }
 
   /* thirdPage */
-  .section_thirdPage {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
   .title_thirdPage h2 {
-    font-size: 60px;
+    font-size: 55px;
   }
-  .title_thirdPage h3 {
-    font-size: 30px;
+  .container_content_text p,
+  .pricing p {
+    font-size: 22px;
   }
-  .steps_thirdPage {
-    flex-direction: column;
+  .pricing h3 {
+    font-size: 80px;
+  }
+  .container_content_text {
     gap: 10px;
-    padding: 10px;
-    background-color: #d9d9d970;
-    border-radius: 10px;
-    border: black 1.3px solid;
   }
-  .steps_thirdPage img {
-    width: 100%;
-    max-width: 150px;
+
+  /* il nostro metodo */
+  .container_content_metodo h2 {
+    font-size: 55px;
   }
-  .steps_thirdPage p {
-    text-align: center;
-    font-size: 25px;
+  .content_text h3{
+    font-size: 34px;
   }
+  .content_text ul li, .content_text p{
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .vantaggi_secondPage {
+     grid-template-columns: repeat(4, 1fr);
+   }
+   .img_secondPage {
+     flex-direction: column;
+     justify-content: center;
+   }
+   .img_secondPage p {
+     font-size: 22px;
+     font-weight: 500;
+     text-align: center;
+     line-height: 20px;
+   }
+
   /* fourth */
-  #fourthPage h2 {
-    font-size: 50px;
-    line-height: 50px;
-    text-align: center;
+  .absolute_container_hover {
+    display: none;
   }
-  .buttons_fourthPage {
-    gap: 30px;
+  .consiglio {
+    display: none;
   }
-  .buttons_fourthPage p {
-    font-size: 30px;
+  .textsection_fourthPage {
+    display: block;
+  }
+  .section_fourthPage {
+    flex-direction: column;
+  }
+  .container_img_team {
+    max-width: fit-content;
+  }
+  .textsection_fourthPage {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+  }
+  .textsection_fourthPage p {
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #efefefab;
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border: 0.1px solid #efefeff1;
+  }
+  .textsection_fourthPage p span {
+    font-size: 35px;
     font-weight: 800;
-    padding: 3px 30px;
-    line-height: 35px;
+    letter-spacing: 1px;
   }
 
   /* fifthPage */
@@ -626,16 +1039,16 @@ sixthPage
     text-align: center;
     width: 100%;
   }
-  #sixthPage h2 {
+  #fifthPage h2 {
     font-size: 50px;
     font-weight: 800;
     line-height: 60px;
   }
-  .container_cards_sixthPage {
+  .container_cards_fifthPage {
     flex-direction: column;
     gap: 30px;
   }
-  .container_cards_sixthPage img {
+  .container_cards_fifthPage img {
     width: 100%;
     max-width: 150px;
   }
@@ -653,6 +1066,15 @@ sixthPage
     font-size: 30px;
     line-height: 30px;
   }
+
+  /* sixthPage */
+  .button_content_sixtPage p {
+    font-size: 2.2rem;
+  }
+  .button_content_sixtPage {
+    padding: 10px 20px;
+  }
+
   /* seventhPage */
   #seventhPage h2 {
     font-size: 50px;
@@ -671,7 +1093,7 @@ sixthPage
     gap: 20px;
   }
   .info_contacts img {
-    max-width: 50px;
+    max-width: 30px;
   }
   .info_contacts p {
     font-size: 22px;
@@ -681,45 +1103,80 @@ sixthPage
   }
 }
 
-@media only screen and (max-width: 470px) {
-  .padding {
+@media screen and (max-width: 470px) {
+  #sixthPage p{
+    font-size: 2rem;
+  }
+  #count1{
+    font-size: 4.5rem;
+  }
+  .padding,
+  #firstPage {
     padding: 30px 55px;
   }
   /* firstPage */
-  #firstPage {
+  .container_title_form {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .list_vantaggi_firstPage {
-    padding-top: 10px;
+  .title_firstPage_title img {
+    width: 60%;
   }
   .title_firstPage_title h1 {
-    font-size: px;
     margin: 10px 0;
   }
-  .title_firstPage p {
-    font-size: 30px;
-    line-height: 35px;
-  }
-  .list_vantaggi_firstPage p {
-    font-size: 20px;
+  .container_left_side {
+    gap: 20px;
   }
 
   /* secondPage */
-  .text_secondPage {
-    flex-direction: column;
-    justify-content: center;
+
+  #secondPage h2 {
+    font-size: 40px;
+    line-height: 40px;
   }
-  .left_side_text_secondPage p {
-    font-size: 20px;
+  .hi-slide .hi-next {
+    right: -10%;
+    top: 200px;
+  }
+  .hi-slide .hi-prev {
+    left: -10%;
+    top: 200px;
+  }
+  .hi-slide > ul,
+  .hi-slide,
+  .container_hi_slider {
+    max-height: 400px;
+  }
+  .mattia {
+    display: none;
+  }
+  .prices {
+    max-width: 900px;
+  }
+
+  /* thirdPage */
+  .title_thirdPage h2 {
+    line-height: 90%;
+  }
+  .container_content_price {
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* il nostro metodo */
+  .container_content_metodo h2{
+    font-size: 40px;
+  }
+  .content_text h3{
+    font-size: 30px;
     line-height: 30px;
   }
-  .left_side_text_secondPage h2 {
-    font-size: 38px;
-    line-height: 50px;
+  .content_text ul li, .content_text h3{
+    padding-bottom: 10px;
   }
-  .img_text_secondPage {
-    max-width: 600px;
-  }
+  
+
   .vantaggi_secondPage {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -732,34 +1189,6 @@ sixthPage
     font-weight: 500;
   }
 
-  /* thirdPage */
-  .title_thirdPage h2 {
-    font-size: 50px;
-    margin: 5px;
-  }
-  .title_thirdPage h3 {
-    font-size: 25px;
-  }
-  .steps_thirdPage {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    background-color: #efefef;
-    border: none;
-    border-radius: none;
-  }
-  .steps_thirdPage img {
-    width: 100%;
-    max-width: 150px;
-  }
-  .steps_thirdPage p {
-    text-align: center;
-    font-size: 20px;
-  }
-  .section_thirdPage {
-    display: block;
-    gap: none;
-  }
   /* fourthPage */
   #fourthPage h2 {
     font-size: 42px;
@@ -775,47 +1204,31 @@ sixthPage
     padding: 3px 30px;
     line-height: 35px;
   }
-
+  .point div {
+    width: 15px;
+    height: 15px;
+  }
+/* fourthPage */
+.section_fourthPage .content_fourthPage p{
+  font-size: 25px;
+  line-height: 35px;
+}
   /* fifthPage */
-  #fifthPage h2 {
-    font-size: 45px;
-    font-weight: 800;
-  }
-  .team {
-    gap: 20px;
-    padding-top: 10px;
-  }
-  .team p {
-    font-size: 30px;
-  }
-  .section_fifthPage div {
-    width: 100%;
-  }
-  .section_fifthPage {
-    flex-direction: column;
-  }
+
   .section_fifthPage img {
     width: 100%;
     max-width: 900px;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
-  .section_fifthPage div p {
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-  }
-
-  /* sixthPage */
-  #sixthPage h2 {
+  #fifthPage h2 {
     font-size: 50px;
     font-weight: 800;
     line-height: 60px;
   }
-  .container_cards_sixthPage {
+  .container_cards_fifthPage {
     flex-direction: column;
     padding-top: 30px;
-  }
-  .container_cards_sixthPage {
     gap: 30px;
   }
   .card {
@@ -828,6 +1241,14 @@ sixthPage
   .card h3 {
     font-weight: 800;
   }
+  /* sixthPage */
+  .buttons_sixthPage {
+    flex-direction: column;
+  }
+  .button_content_sixtPage {
+    width: 100%;
+  }
+
   /* seventhPage */
   #seventhPage h2 {
     font-size: 45px;
@@ -844,26 +1265,34 @@ sixthPage
 
   /* contact */
   .contacts {
-    padding: 15px 60px;
-    flex-direction: column;
+    padding: 15px 30px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+  .info_contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
   }
   .info_contacts img {
-    max-width: 40px;
+    max-width: 20px;
   }
-  .info_contacts p {
-    font-size: 18px;
+  .info_contacts a {
+    font-size: 15px;
   }
   .info_contacts {
     text-align: center;
   }
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .footer p,
+  .footer p a {
+    font-size: 10px;
+  }
 }
