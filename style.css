@@ -927,7 +927,7 @@ fifthPage
     padding: 8px 20px;
   }
   .container_button_scopri button a {
-    font-size: 34px;
+    font-size: 30px;
   }
 
   /* thirdPage */
@@ -1169,6 +1169,9 @@ fifthPage
   .container_content_price {
     flex-direction: column;
     gap: 20px;
+  }
+  .container_button_scopri button a {
+    font-size: 25px;
   }
   /* il nostro metodo */
   .container_content_metodo h2{
